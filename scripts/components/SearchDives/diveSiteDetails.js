@@ -16,7 +16,7 @@ class DiveSiteDetails extends React.Component {
             chanceOfRain: '',
             swellHeight: '',
             swellPeriod: '',
-            heading: '',
+            heading: ''
         }
     }
 
@@ -29,7 +29,7 @@ class DiveSiteDetails extends React.Component {
                     airTemp: response.data.currently.temperature,
                     conditions: response.data.currently.summary,
                     windSpeed: response.data.currently.windSpeed,
-                    chanceOfRain: (response.data.currently.precipProbability * 100).toFixed(2),
+                    chanceOfRain: (response.data.currently.precipProbability * 100).toFixed(2)
                 })
             })
         // gets water information, temp & wave height, etc.  
@@ -44,7 +44,7 @@ class DiveSiteDetails extends React.Component {
                 swellHeight: ((res.data.hours[0].swellHeight[0].value) * 3.28).toFixed(2),
                 swellPeriod: (res.data.hours[0].swellPeriod[0].value),
                 currentSpeed: ((res.data.hours[0].currentSpeed[0].value) * 3.28).toFixed(2),
-                currentDirection: (res.data.hours[0].currentDirection[0].value).toFixed(2),
+                currentDirection: (res.data.hours[0].currentDirection[0].value).toFixed(2)
             })
             if (this.state.currentDirection <= 22.50) {
                 this.setState({

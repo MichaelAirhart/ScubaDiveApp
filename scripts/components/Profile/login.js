@@ -27,13 +27,13 @@ class Login extends React.Component {
                 level: 'Open Water',
                 diveBuddies: [{
                     buddyUserName: 'DannyDiver',
-                    image: diveBuddy1,
+                    image: diveBuddy1
                 }, {
                     buddyUserName: 'ScubaSteve',
-                    image: diveBuddy2,
+                    image: diveBuddy2
                 }, {
                     buddyUserName: 'ByeFish-lica',
-                    image: diveBuddy3,
+                    image: diveBuddy3
                 }],
                 personalDiveSites: ['Shaws Cove', 'The Valient Wreck', 'Casino Point', 'La Jolla Shores'],
             }],
@@ -41,7 +41,7 @@ class Login extends React.Component {
             ExistingPassword: '',
             showLoginScreen: true,
             goToExistingProfile: false,
-            createNewProfile: false,
+            createNewProfile: false
         }
     }
 
@@ -59,7 +59,7 @@ class Login extends React.Component {
     goToNewUser() {
         this.setState({
             showLoginScreen: false,
-            createNewProfile: true,
+            createNewProfile: true
         })
     }
 
@@ -68,7 +68,7 @@ class Login extends React.Component {
             showLoginScreen: true,
             goToExistingProfile: false,
             existingUserName: '',
-            ExistingPassword: '',
+            ExistingPassword: ''
         })
     }
 
@@ -79,7 +79,7 @@ class Login extends React.Component {
             profiles: newProfileArr,
             showLoginScreen: false,
             goToExistingProfile: true,
-            createNewProfile: false,
+            createNewProfile: false
         })
     }
 

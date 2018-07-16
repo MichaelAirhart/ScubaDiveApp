@@ -19,7 +19,7 @@ class CreateProfile extends React.Component {
                 buddyUserName: 'No Dive Buddies Yet',
                 image: ''
             }],
-            personalDiveSites: ['No Dive Sites Yet'],
+            personalDiveSites: ['No Dive Sites Yet']
         }
     }
 

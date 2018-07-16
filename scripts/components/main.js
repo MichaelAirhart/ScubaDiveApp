@@ -17,7 +17,7 @@ class Main extends React.Component {
             latitude: '',
             longitude: '',
             diveSpots: [],
-            showSearchResults: false,
+            showSearchResults: false
         }
     }
 
@@ -38,8 +38,7 @@ class Main extends React.Component {
                         this.setState({
                             diveSpots: res.data.sites,
                         })
-                        console.log(this.state.diveSpots)
-                    }).catch((err) => console.log(err))
+                    })
             })
         this.setState({
             showSearchResults: true,

@@ -3,11 +3,9 @@ import React from 'react';
 import mainImage from '../images/mainImage2.jpg'
 import logo from '../images/logo.png';
 
+
 class Title extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
+
     render() { 
         return ( 
             <div className='text-center'>

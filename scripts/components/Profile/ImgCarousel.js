@@ -10,10 +10,6 @@ import img7 from '../../images/Carrosel/img7.jpg';
 import img8 from '../../images/Carrosel/img8.jpg';
 
 class ImageCarousel extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {}
-    }
 
     render() {
         return (

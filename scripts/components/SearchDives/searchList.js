@@ -14,7 +14,7 @@ var suggestedStyle = {
     backgroundImage: 'url(' + background + ')',
     width: '100%',
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    backgroundSize: "cover"
 }
 
 
@@ -22,7 +22,7 @@ class SearchList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showPopup: false,
+            showPopup: false
         }
     }
 

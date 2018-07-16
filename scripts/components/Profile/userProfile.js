@@ -1,10 +1,6 @@
 import React from 'react';
 
 class UserProfile extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {}
-    }
 
     logOut() {
         this.props.logOutProperty(this.state)
@@ -44,7 +40,6 @@ class UserProfile extends React.Component {
                     <div className='col-md-5'>
                         <h3>My Favorite Dive Sites:</h3>
                         <hr />
-                        {/* create a conditional if no sites are selected have a prompt */}
                         {this.props.user.personalDiveSites.map((spot, index) => {
                             return (
                                 <li key={index}>
